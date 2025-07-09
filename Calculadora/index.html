@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <p>calc</p>
+            <div class="interface" id="interface" >
+                <input id="valor" type="text" value="" placeholder="0" autofocus></input>
+            </div>
+            <div class="inputs" id="valor">
+                <input class="btn-default" onclick="display(this.value)" type="button" value="8"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="9"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="7"></input>
+                <input class="btn-default" onclick="apagar()" style="background-color: rgb(100,114,153); color:rgb(234,227,219);" type="button" value="del"></input>
+                <br>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="4"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="5"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="6"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="+"></input>
+                <br>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="1"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="2"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="3"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="-"></input>
+                <br>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="."></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="0"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="/"></input>
+                <input class="btn-default" onclick="display(this.value)" type="button" value="x"></input>
+                <br>
+                <input class="btn-submit" onclick="apagartudo()" type="button" value="RESET">
+                <input class="btn-submit" style="background-color: rgb(209,63,48);" type="button" onclick="equacao()" value="=">
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
